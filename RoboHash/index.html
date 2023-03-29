@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RoboHash</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="robohash-container"></div>
+
+    <h1>RoboHash Generator</h1>
+    <div class="form">
+        <label for="text-input">Text: </label>
+        <input type="text" id="text-input">
+        <br>
+        <label for="select-set">Type: </label>
+        <select id="select-set">
+            <option value="set1">Roboter</option>
+            <option value="set2">Monster</option>
+            <option value="set4">Katzen</option>
+        </select>
+        <br>
+        <button type="button" id="generate-btn">Generate</button>
+
+    </div>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
