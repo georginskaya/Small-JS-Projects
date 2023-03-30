@@ -8,7 +8,14 @@ const generateBtn = document.getElementById("generate-btn");
 const selectDropdown = document.getElementById("select-set");
 const container = document.getElementById("robohash-container");
 
-generateBtn.addEventListener("click", getImage);
+// assigning the arguments upon a button click by running an anonymous function
+generateBtn.addEventListener("click", () => {
+  let text = textInput.value;
+  let selected = selectDropdown.value;
+
+  // running the actual function
+  getImage(text, selected);
+});
 
 function randomSize() {
   let sizes = ["50", "100px", "150px", "200px", "250px", "350px"];
@@ -20,10 +27,7 @@ function randomSize() {
 //to complete before executing the rest of the code
 // only works with async functions
 
-async function getImage(event) {
-  event.preventDefault();
-  let text = textInput.value;
-  let selected = selectDropdown.value;
+async function getImage(text, selected) {
   let encodedText = encodeURIComponent(text);
   try {
     let response = await axios.get(
@@ -32,16 +36,11 @@ async function getImage(event) {
 
     console.log(response);
     // this  code  line will not run until the promise (await response) returns
-    // appending text
+
     let imgContainer = document.createElement("div");
     imgContainer.classList.add("img-container");
 
-    let fing = document.createElement("span");
-    fing.innerHTML = `${text}`;
-    fing.classList.add("findcaption");
-    imgContainer.appendChild(fing);
-
-    // appending img
+    // appending img and text
     let img = document.createElement("img");
     img.src = response.request.responseURL;
     imgContainer.appendChild(img);
@@ -49,8 +48,24 @@ async function getImage(event) {
     img.style.width = randomWidth;
     img.style.height = randomWidth;
 
+    let fing = document.createElement("span");
+    fing.innerHTML = `${text}`;
+    fing.classList.add("findcaption");
+    imgContainer.appendChild(fing);
+
     container.appendChild(imgContainer);
   } catch (error) {
     console.log(`something went wrong: ${error}`);
   }
 }
+
+window.onload = function () {
+  const robots = [
+    { text: "Lucia Johnsonuk", set: "set1" },
+    { text: "Pedrito von der Heid", set: "set1" },
+    { text: "Denise Howdiy", set: "set1" },
+    { text: "Roman Kaydar", set: "set1" },
+  ];
+
+  robots.forEach((robot) => getImage(robot.text, robot.set));
+};

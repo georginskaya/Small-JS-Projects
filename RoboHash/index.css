@@ -5,13 +5,12 @@ body {
   background: #fff;
   background: linear-gradient(to right, #f5f7fa, #c3cfe2);
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
 }
 
 h1 {
   text-align: center;
   margin-top: 50px;
-  font-size: 36px;
+  font-size: 52px;
 
   color: #2e2e2e;
   font-family: "Bungee Shade", cursive;
@@ -35,6 +34,10 @@ h1 {
   color: #4d4d4d;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
+}
+
+.small_text {
+  font-size: 18px;
 }
 
 .form input[type="text"],
@@ -75,7 +78,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .img-container {
@@ -87,16 +90,13 @@ h1 {
 
 .img-container img {
   margin-top: 10px;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .findcaption {
   margin-top: 10px;
-  font-weight: bold;
-  font-size: 18px;
-  color: #333;
+  font-weight: 900;
+  font-size: 21px;
+  color: rgb(0, 0, 0);
   text-align: center;
-  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
 }
