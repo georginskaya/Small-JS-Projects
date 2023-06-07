@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300&display=swap');
+
+html{
+
+ background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+  
+}
+input{
+  background: transparent;
+  color: aliceblue;
+  padding: 10px;
+  width:200px;
+  font-size: 20px;
+  border-radius: 8px;
+    border: 1px solid rgb(143, 142, 129);
+}
+
+button{
+  background: transparent;
+  border-radius: 1000px;
+  border: 1px solid rgb(255, 225, 0);
+  width: 45px;
+  height: 45px;
+  color: rgb(255, 225, 0);
+  margin-left: 15px;
+}
+button:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.toDoForm{
+ display: flex;
+ justify-content: center;
+}
+
+.done{
+  
+  text-decoration: line-through;
+}
+
+h1{
+  text-align: center;
+  font-size: 77px;
+  color: rgb(255, 225, 0);
+font-family: 'Knewave', cursive;
+text-shadow: 2px 2px 2px #140905;}
+
+.todo_list{
+  list-style-type: none;
+ 
+display: block;
+}
+
+li{
+
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding:8px;
+  
+  color: aliceblue;
+  font-size: 23px;
+  font-family: 'Hind Vadodara', sans-serif;
+  text-shadow: 2px 2px 2px #140905;
+  border: 1px solid rgba(43,41,49,0.42);
+border-radius: 7px;
+width: 380px;
+
+  display: flex;
+  justify-content:end
+
+}
+
+
+
+
+
+
+
+
+
