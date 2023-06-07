@@ -1,4 +1,4 @@
-# Small JS Projects
+# Small JS and React Projects
  
 This repository contains my small js projects most of which were completed for learning purposes. 
 
