@@ -3,6 +3,9 @@
 This repository contains my small js projects most of which were completed for learning purposes. 
 
 Open the folders to view the code and check out the preview here: 
+<h2>OpenAI: Questions Generator</h2>
+This simple app was  built by integratiing and OpenAI API and asynchronous JS. 
+It generates meaningful questions for couples to ask each other
 
 <h2>RoboHash Generator</h2>
 Built with asynchronous JS function and RoboHash API, this webpage enables you to generate robots, monster and cats images. 
