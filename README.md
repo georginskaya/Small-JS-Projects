@@ -6,6 +6,8 @@ Open the folders to view the code and check out the preview here:
 <h2>OpenAI: Questions Generator</h2>
 This simple app was  built by integratiing and OpenAI API and asynchronous JS. 
 It generates meaningful questions for couples to ask each other
+<br>DEMO: https://shiny-conkies-0e964f.netlify.app/ 
+<img width="786" alt="image" https://github.com/georginskaya/Small-JS-and-React-Projects/assets/93949569/4a3b8dd0-b047-41bb-b89a-c35c118a8b33>
 
 <h2>RoboHash Generator</h2>
 Built with asynchronous JS function and RoboHash API, this webpage enables you to generate robots, monster and cats images. 
