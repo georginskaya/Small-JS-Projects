@@ -4,7 +4,7 @@ This repository contains my small js projects most of which were completed for l
 
 Open the folders to view the code and check out the preview here: 
 <h2>OpenAI: Questions Generator</h2>
-This simple app was  built by integratiing and OpenAI API and asynchronous JS. 
+This simple app was  built by integratiing an OpenAI API and asynchronous JS. 
 It generates meaningful questions for couples to ask each other
 <br>DEMO: https://shiny-conkies-0e964f.netlify.app/ 
 <img width="786" alt="image" src="https://github.com/georginskaya/Small-JS-and-React-Projects/assets/93949569/4a3b8dd0-b047-41bb-b89a-c35c118a8b33">
